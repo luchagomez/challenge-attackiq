@@ -8,14 +8,20 @@ public class HomePage {
     private WebDriver driver;
     private By userMenuButton = By.className("avatar-picture");
     private By passwordOption= By.cssSelector("#main-menu > ul > li.dropdown.no-hover.open > ul > li:nth-child(3) > a");
+    private By logOutOption = By.cssSelector("#main-menu > ul > li.dropdown.no-hover.open > ul > li:nth-child(6) > a");
     public HomePage(WebDriver driver)  {
         this.driver = driver;
     }
+
     public void clickMenuButton() { driver.findElement(userMenuButton).click(); }
 
-   public ChangePasswordPage SelectPasswordOption(){
+    public ChangePasswordPage SelectPasswordOption(){
        driver.findElement(passwordOption).click();
         return new ChangePasswordPage(driver);
     }
 
+    public LoginPage SelectLogoutOption(){
+        driver.findElement(logOutOption).click();
+        return new LoginPage(driver);
+    }
 }

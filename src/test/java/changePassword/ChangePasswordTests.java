@@ -24,9 +24,14 @@ public class ChangePasswordTests extends BaseTests {
         changePasswordPage.setNewPassword(newPass);
         changePasswordPage.setConfirmPassword(newPass);
         changePasswordPage.clickSaveButton();
-        System.out.println(changePasswordPage.getAlertText());
         assertTrue(changePasswordPage.getAlertText()
             .contains("Operation completed successfully."),
                 "Alert text incorrect");
+        homePage.clickMenuButton();
+        homePage.SelectLogoutOption();
+        loginPage.setUsername("qa02@challenge.org");
+        loginPage.clickLoginButton();
+        loginPage.setPassword(newPass);
+
      }
     }
