@@ -14,7 +14,7 @@ public class ChangePasswordTests extends BaseTests {
         loginPage.setUsername("qa02@challenge.org");
         loginPage.clickContinueButton();
         String currentPass = "testChallenge02";
-        String newPass= "testChallenge02";
+        String newPass= "testChallenge20";
 
         loginPage.setPassword(currentPass);
         HomePage homePage = loginPage.clickLoginButton();
