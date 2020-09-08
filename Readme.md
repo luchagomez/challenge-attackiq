@@ -5,11 +5,11 @@ In order to write scripts using the Selenium WebDriver Java client, we'll need t
 - We're also going to use IntelliJ
 
 # Java Installation / Update
-We're on Oracle's website and this is where we can download [Java] (https://www.oracle.com/technetwork/java/javase/downloads/index.html).
+We're on Oracle's website and this is where we can download [Java](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 # IntelliJ Installation
 The next thing we're going to do is to install IntelliJ, which again will be the editor that we write our code in.
-[IntelliJ Download] (https://www.jetbrains.com/idea/download/)
+[IntelliJ Download](https://www.jetbrains.com/idea/download/)
 
 Open the IntelliJ editor and make sure to have all the dependencies installed. You can run the test "ChangePasswordTests" by clicking the run button at the right-top of the page:
 
@@ -17,6 +17,7 @@ Open the IntelliJ editor and make sure to have all the dependencies installed. Y
      
 
 Make sure to have the following configuration set up:
+VM Option = -Dtestng.dtd.http=true
 <img src= "https://content.screencast.com/users/Lucgomez/folders/Capture/media/7c7a85fa-a55a-4cbf-b913-136b8f2102cf/screenshot.png">
 
 
